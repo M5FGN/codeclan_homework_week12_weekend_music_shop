@@ -2,12 +2,12 @@ package Accessories;
 
 public class Accessory {
 
-    String name;
-    String description;
-    int salePrice;
-    int purchasePrice;
+    private String name;
+    private String description;
+    private double salePrice;
+    private double purchasePrice;
 
-    public Accessory(String name, String description, int salePrice, int purchasePrice) {
+    public Accessory(String name, String description, double salePrice, double purchasePrice) {
         this.name = name;
         this.description = description;
         this.salePrice = salePrice;
@@ -22,11 +22,11 @@ public class Accessory {
         return description;
     }
 
-    public int getSalePrice() {
+    public double getSalePrice() {
         return salePrice;
     }
 
-    public int getPurchasePrice() {
+    public double getPurchasePrice() {
         return purchasePrice;
     }
 }

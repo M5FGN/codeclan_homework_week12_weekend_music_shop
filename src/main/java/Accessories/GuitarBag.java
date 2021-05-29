@@ -1,11 +1,11 @@
 package Accessories;
 
-public class GuitarBags extends Accessory{
+public class GuitarBag extends Accessory{
 
-    String colour;
-    String material;
+    private String colour;
+    private String material;
 
-    public GuitarBags(String name, String description, int salePrice, int purchasePrice, String colour, String material) {
+    public GuitarBag(String name, String description, double salePrice, double purchasePrice, String colour, String material) {
         super(name, description, salePrice, purchasePrice);
         this.colour = colour;
         this.material = material;

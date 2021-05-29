@@ -2,8 +2,8 @@ package Instruments;
 
 public class Guitar extends Instrument {
 
-    int noOfStrings;
-    String bodyShape;
+    private int noOfStrings;
+    private String bodyShape;
 
     public Guitar(String name, String description, int salePrice, int purchasePrice, String material, String colour, String instrumentType, int noOfStrings, String bodyShape) {
         super(name, description, salePrice, purchasePrice, material, colour, instrumentType);

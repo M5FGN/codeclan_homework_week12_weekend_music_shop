@@ -2,13 +2,13 @@ package Instruments;
 
 public class Instrument {
 
-    String name;
-    String description;
-    int salePrice;
-    int purchasePrice;
-    String material;
-    String colour;
-    String instrumentType;
+    private String name;
+    private String description;
+    private int salePrice;
+    private int purchasePrice;
+    private String material;
+    private String colour;
+    private String instrumentType;
 
     public Instrument(String name, String description, int salePrice, int purchasePrice, String material, String colour, String instrumentType) {
         this.name = name;

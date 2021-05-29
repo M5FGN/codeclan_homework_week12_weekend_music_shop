@@ -2,9 +2,9 @@ package Accessories;
 
 public class DrumSticks extends Accessory {
 
-    String tipMaterial;
+    private String tipMaterial;
 
-    public DrumSticks(String name, String description, int salePrice, int purchasePrice, String tipMaterial) {
+    public DrumSticks(String name, String description, double salePrice, double purchasePrice, String tipMaterial) {
         super(name, description, salePrice, purchasePrice);
         this.tipMaterial = tipMaterial;
     }

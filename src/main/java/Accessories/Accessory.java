@@ -1,6 +1,8 @@
 package Accessories;
 
-public class Accessory {
+import Behaviours.ISell;
+
+public abstract class Accessory implements ISell {
 
     private String name;
     private String description;

@@ -11,7 +11,7 @@ Keyboard keyboard2;
 
 @Before
     public void setUp(){
-    keyboard1 = new Keyboard("Roland Go", "Premium piano performance in a compact, portable and affordable instrument.", 400.99, 199.99, Material.PLASTIC, Colour.BLACK, Type.KEYS, 88);
+    keyboard1 = new Keyboard("Roland Go", "Premium piano performance in a compact, portable and affordable instrument.", 499.99, 199.99, Material.PLASTIC, Colour.BLACK, Type.KEYS, 88);
     keyboard2 = new Keyboard("Native Instruments Komplete", "Offering best-in-class performance.", 1600.99, 999.99, Material.PLASTIC, Colour.BLACK, Type.KEYS, 25);
 }
 
@@ -27,7 +27,7 @@ Keyboard keyboard2;
 
     @Test
     public void hasSalePrice(){
-        assertEquals(400.99, keyboard1.getSalePrice(), 0.00);
+        assertEquals(499.99, keyboard1.getSalePrice(), 0.00);
     }
 
     @Test
@@ -59,5 +59,11 @@ Keyboard keyboard2;
     public void canPlaySound() {
         assertEquals("I make a click sound!", keyboard1.playsSound("click"));
     }
+
+    @Test
+    public void calculateMarkup() {
+        assertEquals(300.00, keyboard1.calculateMarkup(),0.00);
+    }
+
 
 }

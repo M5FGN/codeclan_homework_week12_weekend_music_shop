@@ -1,6 +1,8 @@
 package Accessories;
 
-public class GuitarBag extends Accessory{
+import Behaviours.ISell;
+
+public class GuitarBag extends Accessory implements ISell {
 
     private String colour;
     private String material;
@@ -17,5 +19,12 @@ public class GuitarBag extends Accessory{
 
     public String getMaterial() {
         return material;
+    }
+
+    public double calculateMarkup(){
+        double sale = this.getSalePrice();
+        double purchase = this.getPurchasePrice();
+        double markup = sale - purchase;
+        return markup;
     }
 }

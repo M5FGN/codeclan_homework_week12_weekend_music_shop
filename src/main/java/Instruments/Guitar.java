@@ -1,6 +1,9 @@
 package Instruments;
 
-public class Guitar extends Instrument {
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public class Guitar extends Instrument implements IPlay, ISell {
 
     private int noOfStrings;
     private String bodyShape;
@@ -17,5 +20,16 @@ public class Guitar extends Instrument {
 
     public String getBodyShape() {
         return bodyShape;
+    }
+
+    public String playsSound(String sound) {
+        return "I make a " + sound + " sound!";
+    }
+
+    public double calculateMarkup(){
+        double sale = this.getSalePrice();
+        double purchase = this.getPurchasePrice();
+        double markup = sale - purchase;
+        return markup;
     }
 }

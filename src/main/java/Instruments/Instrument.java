@@ -1,8 +1,9 @@
 package Instruments;
 
 import Behaviours.IPlay;
+import Behaviours.ISell;
 
-public class Instrument implements IPlay{
+public abstract class Instrument implements IPlay, ISell {
 
     private String name;
     private String description;
@@ -48,10 +49,6 @@ public class Instrument implements IPlay{
 
     public Type getType() {
         return type;
-    }
-
-    public String playsSound(String sound) {
-        return "I make a " + sound + " sound!";
     }
 
 }

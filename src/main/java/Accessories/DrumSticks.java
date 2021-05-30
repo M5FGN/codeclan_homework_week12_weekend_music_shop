@@ -1,6 +1,8 @@
 package Accessories;
 
-public class DrumSticks extends Accessory {
+import Behaviours.ISell;
+
+public class DrumSticks extends Accessory implements ISell {
 
     private String tipMaterial;
 
@@ -14,4 +16,10 @@ public class DrumSticks extends Accessory {
         }
 
 
+    public double calculateMarkup(){
+        double sale = this.getSalePrice();
+        double purchase = this.getPurchasePrice();
+        double markup = sale - purchase;
+        return markup;
+    }
 }

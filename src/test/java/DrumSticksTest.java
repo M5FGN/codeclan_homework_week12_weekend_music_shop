@@ -40,4 +40,9 @@ public class DrumSticksTest {
         assertEquals("nylon", drumSticks2.getTipMaterial());
     }
 
+    @Test
+    public void calculateMarkup() {
+        assertEquals(3.00, drumSticks1.calculateMarkup(),0.00);
+    }
+
 }

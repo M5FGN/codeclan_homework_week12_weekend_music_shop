@@ -1,6 +1,9 @@
 package Instruments;
 
-public class Keyboard extends Instrument {
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public class Keyboard extends Instrument implements IPlay, ISell {
 
     private int noOfKeys;
 
@@ -12,4 +15,17 @@ public class Keyboard extends Instrument {
     public int getNoOfKeys() {
         return noOfKeys;
     }
+
+    public String playsSound(String sound) {
+        return "I make a " + sound + " sound!";
+    }
+
+    public double calculateMarkup(){
+        double sale = this.getSalePrice();
+        double purchase = this.getPurchasePrice();
+        double markup = sale - purchase;
+        return markup;
+    }
+
+
 }

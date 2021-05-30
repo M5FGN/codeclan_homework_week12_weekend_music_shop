@@ -1,6 +1,9 @@
 package Instruments;
 
-public class Drums extends Instrument {
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public class Drums extends Instrument implements IPlay, ISell {
 
     private int kitSize;
 
@@ -11,6 +14,17 @@ public class Drums extends Instrument {
 
     public int getKitSize() {
         return kitSize;
+    }
+
+    public String playsSound(String sound) {
+        return "I make a " + sound + " sound!";
+    }
+
+    public double calculateMarkup(){
+        double sale = this.getSalePrice();
+        double purchase = this.getPurchasePrice();
+        double markup = sale - purchase;
+        return markup;
     }
 
 }

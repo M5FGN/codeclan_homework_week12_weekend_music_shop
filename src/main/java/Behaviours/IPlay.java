@@ -2,6 +2,6 @@ package Behaviours;
 
 public interface IPlay {
 
-    String playsSound (String sound);
+    public String playsSound (String sound);
 
 }

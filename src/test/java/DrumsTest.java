@@ -62,4 +62,9 @@ public class DrumsTest {
     public void canPlaySound() {
         assertEquals("I make a boom sound!", drums1.playsSound("boom"));
     }
+
+    @Test
+    public void calculateMarkup() {
+        assertEquals(400.00, drums2.calculateMarkup(),0.00);
+    }
 }

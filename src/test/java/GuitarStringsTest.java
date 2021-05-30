@@ -38,4 +38,8 @@ public class GuitarStringsTest {
         assertEquals(7, guitarStrings.getPackSize());
     }
 
+    @Test
+    public void calculateMarkup() {
+        assertEquals(9.00, guitarStrings.calculateMarkup(),0.00);
+    }
 }

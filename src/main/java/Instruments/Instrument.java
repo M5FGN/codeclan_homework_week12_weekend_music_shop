@@ -1,6 +1,8 @@
 package Instruments;
 
-public class Instrument {
+import Behaviours.IPlay;
+
+public class Instrument implements IPlay{
 
     private String name;
     private String description;
@@ -47,4 +49,9 @@ public class Instrument {
     public Type getType() {
         return type;
     }
+
+    public String playsSound(String sound) {
+        return "I make a " + sound + " sound!";
+    }
+
 }

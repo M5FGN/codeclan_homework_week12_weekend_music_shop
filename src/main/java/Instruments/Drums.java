@@ -12,4 +12,5 @@ public class Drums extends Instrument {
     public int getKitSize() {
         return kitSize;
     }
+
 }

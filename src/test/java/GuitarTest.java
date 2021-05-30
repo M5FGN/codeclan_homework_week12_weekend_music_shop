@@ -60,4 +60,9 @@ public class GuitarTest {
     public void hasBodyShape() {
         assertEquals("LPS", guitar2.getBodyShape());
     }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("I make a ding sound!", guitar1.playsSound("ding"));
+    }
 }

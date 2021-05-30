@@ -55,5 +55,9 @@ Keyboard keyboard2;
     assertEquals(25, keyboard2.getNoOfKeys());
     }
 
+    @Test
+    public void canPlaySound() {
+        assertEquals("I make a click sound!", keyboard1.playsSound("click"));
+    }
 
 }

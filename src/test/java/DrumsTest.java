@@ -57,4 +57,9 @@ public class DrumsTest {
     public void hasKitSize(){
         assertEquals(7, drums2.getKitSize());
     }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("I make a boom sound!", drums1.playsSound("boom"));
+    }
 }

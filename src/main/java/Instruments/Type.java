@@ -3,6 +3,8 @@ package Instruments;
 public enum Type {
 
     STRING,
-    WIND
+    WIND,
+    DRUMS,
+    KEYS
 
 }

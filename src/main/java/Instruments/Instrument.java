@@ -4,20 +4,20 @@ public class Instrument {
 
     private String name;
     private String description;
-    private int salePrice;
-    private int purchasePrice;
-    private String material;
-    private String colour;
-    private String instrumentType;
+    private double salePrice;
+    private double purchasePrice;
+    private Material material;
+    private Colour colour;
+    private Type type;
 
-    public Instrument(String name, String description, int salePrice, int purchasePrice, String material, String colour, String instrumentType) {
+    public Instrument(String name, String description, double salePrice, double purchasePrice, Material material, Colour colour, Type type) {
         this.name = name;
         this.description = description;
         this.salePrice = salePrice;
         this.purchasePrice = purchasePrice;
         this.material = material;
         this.colour = colour;
-        this.instrumentType = instrumentType;
+        this.type = type;
     }
 
     public String getName() {
@@ -28,23 +28,23 @@ public class Instrument {
         return description;
     }
 
-    public int getSalePrice() {
+    public double getSalePrice() {
         return salePrice;
     }
 
-    public int getPurchasePrice() {
+    public double getPurchasePrice() {
         return purchasePrice;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public String getColour() {
+    public Colour getColour() {
         return colour;
     }
 
-    public String getInstrumentType() {
-        return instrumentType;
+    public Type getType() {
+        return type;
     }
 }

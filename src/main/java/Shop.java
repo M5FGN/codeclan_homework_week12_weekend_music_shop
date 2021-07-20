@@ -16,6 +16,10 @@ public class Shop {
         return name;
     }
 
+    public ArrayList<ISell> getStock() {
+        return stock;
+    }
+
     public int stockCount() {
     return stock.size();
     }
@@ -30,15 +34,16 @@ public class Shop {
 
 
 //    public double stockTotalSaleValue() {
-//
-//    }
+//        double salePrice = ISell.getSalePrice();
+//        double total;
+//        int i;
+//        for (i=0, this.stock.size(); i++) {
+//            total = total + this.salePrice;
+//        }
+
+    }
 
 //    public double stockTotalProfitPotential() {
 //
 //    }
 
-
-
-
-
-}

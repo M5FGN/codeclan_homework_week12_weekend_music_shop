@@ -55,6 +55,4 @@ public class ShopTest {
         assertEquals(1, shop.stockCount());
     }
 
-
-
 }
